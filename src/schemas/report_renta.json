@@ -1,0 +1,63 @@
+{
+  "id": "renta",
+  "label": "Informe de Renta",
+  "description": "Analisis de ingresos y capacidad de pago del solicitante",
+  "sections": {
+    "solicitantes": {
+      "title": "Solicitante(s)",
+      "icon": "Users",
+      "card_fields": {
+        "name": {
+          "label": "Nombre"
+        },
+        "rut": {
+          "label": "RUT"
+        }
+      },
+      "detail_fields": {
+        "nacionalidad": {
+          "label": "Nacionalidad",
+          "icon": "Globe"
+        },
+        "sexo": {
+          "label": "Sexo",
+          "icon": "User"
+        },
+        "edad": {
+          "label": "Edad",
+          "icon": "Cake"
+        },
+        "profesion": {
+          "label": "Profesión",
+          "icon": "Briefcase"
+        },
+        "empleador": {
+          "label": "Nombre del Empleador",
+          "icon": "Building",
+          "source": { "doctype": "liquidaciones-sueldo", "field": "empleador" }
+        },
+        "fecha_ingreso": {
+          "label": "Fecha de Ingreso",
+          "icon": "Calendar",
+          "source": { "doctype": "liquidaciones-sueldo", "field": "fecha_ingreso" }
+        }
+      }
+    },
+    "ingresos": {
+      "title": "Ingresos",
+      "icon": "TrendingUp"
+    },
+    "deudas": {
+      "title": "Deudas",
+      "icon": "CreditCard"
+    },
+    "activos": {
+      "title": "Activos",
+      "icon": "Wallet"
+    },
+    "resultado": {
+      "title": "Resultado",
+      "icon": "ClipboardCheck"
+    }
+  }
+}
