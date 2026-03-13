@@ -61,6 +61,11 @@ describe('toTitleCase', () => {
     it('converts snake_case to title case', () => {
         expect(toTitleCase('hello_world')).toBe('Hello World')
     })
+
+    it('handles Spanish accented characters correctly', () => {
+        expect(toTitleCase('RETENCIÓN')).toBe('Retención')
+        expect(toTitleCase('ASIGNACIÓN LEY 19464')).toBe('Asignación Ley 19464')
+    })
 })
 
 describe('displayUF', () => {

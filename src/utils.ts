@@ -33,7 +33,7 @@ export const toTitleCase = (str: string): string => {
     return str
         .toLowerCase()
         .replace(/_/g, ' ')
-        .replace(/\b\w/g, c => c.toUpperCase())
+        .replace(/(^|\s)\S/g, c => c.toUpperCase())
 }
 
 export const displayUF = (value: number | undefined | null): string => {

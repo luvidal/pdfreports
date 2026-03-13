@@ -737,7 +737,7 @@ var displayCurrencyCompact = (value, isDeduction = false) => {
   return `${sign}$${thousands.toLocaleString("es-CL")}`;
 };
 var toTitleCase = (str) => {
-  return str.toLowerCase().replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+  return str.toLowerCase().replace(/_/g, " ").replace(/(^|\s)\S/g, (c) => c.toUpperCase());
 };
 var displayUF = (value) => {
   if (value === void 0 || value === null) return "";
